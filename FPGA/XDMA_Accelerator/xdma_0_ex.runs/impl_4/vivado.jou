@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 27 12:20:53 2024
+# Process ID: 11388
+# Current directory: /home/rnt/workspace/XDMA_Accelerator/xdma_0_ex.runs/impl_4
+# Command line: vivado -log xilinx_dma_pcie_ep.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source xilinx_dma_pcie_ep.tcl -notrace
+# Log file: /home/rnt/workspace/XDMA_Accelerator/xdma_0_ex.runs/impl_4/xilinx_dma_pcie_ep.vdi
+# Journal file: /home/rnt/workspace/XDMA_Accelerator/xdma_0_ex.runs/impl_4/vivado.jou
+#-----------------------------------------------------------
+source xilinx_dma_pcie_ep.tcl -notrace

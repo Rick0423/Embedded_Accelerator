@@ -1,0 +1,533 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul 23 12:21:45 2022
+# Process ID: 1031438
+# Current directory: /home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1
+# Command line: vivado -log xilinx_dma_pcie_ep.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xilinx_dma_pcie_ep.tcl
+# Log file: /home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/xilinx_dma_pcie_ep.vds
+# Journal file: /home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source xilinx_dma_pcie_ep.tcl -notrace
+Command: synth_design -top xilinx_dma_pcie_ep -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1031460 
+WARNING: [Synth 8-2507] parameter declaration becomes local in xdma_user_int_gen with formal parameter declaration list [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_user_int_gen.v:89]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1455.781 ; gain = 92.500 ; free physical = 42363 ; free virtual = 59917
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xilinx_dma_pcie_ep' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xilinx_dma_pcie_ep.sv:57]
+	Parameter PL_LINK_CAP_MAX_LINK_WIDTH bound to: 1 - type: integer 
+	Parameter PL_SIM_FAST_LINK_TRAINING bound to: FALSE - type: string 
+	Parameter PL_LINK_CAP_MAX_LINK_SPEED bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter EXT_PIPE_SIM bound to: FALSE - type: string 
+	Parameter C_ROOT_PORT bound to: FALSE - type: string 
+	Parameter C_DEVICE_NUMBER bound to: 0 - type: integer 
+	Parameter AXIS_CCIX_RX_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter AXIS_CCIX_TX_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter AXIS_CCIX_RX_TUSER_WIDTH bound to: 46 - type: integer 
+	Parameter AXIS_CCIX_TX_TUSER_WIDTH bound to: 46 - type: integer 
+	Parameter USER_CLK_FREQ bound to: 4 - type: integer 
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_NUM_USR_IRQ bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20561]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (1#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20561]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (2#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20408]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28230]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (3#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28230]
+INFO: [Synth 8-6157] synthesizing module 'xdma_0' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/.Xil/Vivado-1031438-pku-sat11/realtime/xdma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_0' (4#1) [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/.Xil/Vivado-1031438-pku-sat11/realtime/xdma_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'xdma_app' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_app.v:57]
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter PL_LINK_CAP_MAX_LINK_WIDTH bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXIS_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_RQ_USER_WIDTH bound to: 62 - type: integer 
+	Parameter C_S_AXIS_CQP_USER_WIDTH bound to: 88 - type: integer 
+	Parameter C_M_AXIS_RC_USER_WIDTH bound to: 75 - type: integer 
+	Parameter C_S_AXIS_CC_USER_WIDTH bound to: 33 - type: integer 
+	Parameter C_S_KEEP_WIDTH bound to: 2 - type: integer 
+	Parameter C_M_KEEP_WIDTH bound to: 2 - type: integer 
+	Parameter C_XDMA_NUM_CHNL bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xdma_user_int_gen' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_user_int_gen.v:57]
+	Parameter C_USER_MEM_SIZE bound to: 33 - type: integer 
+	Parameter C_NUM_USR_IRQ bound to: 1 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter REQ bound to: 2'b01 
+	Parameter ACK bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'XDMA_UserRegSlave' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_app_user_reg.v:56]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter STRB_WIDTH bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element rden_d3_reg was removed.  [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_app_user_reg.v:136]
+INFO: [Synth 8-4471] merging register 'wready_reg' into 'awready_reg' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_app_user_reg.v:248]
+WARNING: [Synth 8-6014] Unused sequential element wready_reg was removed.  [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_app_user_reg.v:248]
+INFO: [Synth 8-6155] done synthesizing module 'XDMA_UserRegSlave' (5#1) [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_app_user_reg.v:56]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/.Xil/Vivado-1031438-pku-sat11/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (6#1) [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/.Xil/Vivado-1031438-pku-sat11/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_mem_axiLM_inst' of module 'blk_mem_gen_0' requires 21 connections, but only 19 given [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_user_int_gen.v:331]
+WARNING: [Synth 8-6014] Unused sequential element s_axil_awaddr_temp_reg was removed.  [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_user_int_gen.v:145]
+WARNING: [Synth 8-6014] Unused sequential element s_axil_araddr_temp_reg was removed.  [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_user_int_gen.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_user_int_gen' (7#1) [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_user_int_gen.v:57]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/.Xil/Vivado-1031438-pku-sat11/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (8#1) [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/.Xil/Vivado-1031438-pku-sat11/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_mem_xdma_inst' of module 'blk_mem_gen_1' requires 33 connections, but only 31 given [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_app.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_app' (9#1) [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_app.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'xilinx_dma_pcie_ep' (10#1) [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xilinx_dma_pcie_ep.sv:57]
+WARNING: [Synth 8-3331] design XDMA_UserRegSlave has unconnected port wstrb[3]
+WARNING: [Synth 8-3331] design XDMA_UserRegSlave has unconnected port wstrb[2]
+WARNING: [Synth 8-3331] design XDMA_UserRegSlave has unconnected port wstrb[1]
+WARNING: [Synth 8-3331] design XDMA_UserRegSlave has unconnected port wstrb[0]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[63]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[62]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[61]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[60]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[59]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[58]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[57]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[56]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[55]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[54]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[53]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[52]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[51]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[50]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[49]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[48]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[47]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[46]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[45]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[44]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[43]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[42]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[41]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[40]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[39]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[38]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[37]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[36]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[35]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[34]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[33]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_awaddr[32]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[63]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[62]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[61]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[60]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[59]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[58]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[57]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[56]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[55]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[54]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[53]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[52]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[51]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[50]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[49]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[48]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[47]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[46]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[45]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[44]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[43]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[42]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[41]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[40]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[39]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[38]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[37]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[36]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[35]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[34]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[33]
+WARNING: [Synth 8-3331] design xdma_app has unconnected port s_axi_araddr[32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1485.031 ; gain = 121.750 ; free physical = 42378 ; free virtual = 59933
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1485.031 ; gain = 121.750 ; free physical = 42381 ; free virtual = 59935
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1485.031 ; gain = 121.750 ; free physical = 42381 ; free virtual = 59935
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc] for cell 'xdma_0_i'
+Finished Parsing XDC File [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc] for cell 'xdma_0_i'
+Parsing XDC File [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'xdma_app_i/xdma_user_int_inst/blk_mem_axiLM_inst'
+Finished Parsing XDC File [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'xdma_app_i/xdma_user_int_inst/blk_mem_axiLM_inst'
+Parsing XDC File [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'xdma_app_i/blk_mem_xdma_inst'
+Finished Parsing XDC File [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'xdma_app_i/blk_mem_xdma_inst'
+Parsing XDC File [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xilinx_pcie_xdma_ref_board.xdc]
+Finished Parsing XDC File [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xilinx_pcie_xdma_ref_board.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xilinx_pcie_xdma_ref_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xilinx_dma_pcie_ep_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xilinx_dma_pcie_ep_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.250 ; gain = 0.000 ; free physical = 42089 ; free virtual = 59644
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.250 ; gain = 0.000 ; free physical = 42091 ; free virtual = 59645
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.250 ; gain = 0.000 ; free physical = 42091 ; free virtual = 59645
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.250 ; gain = 0.000 ; free physical = 42091 ; free virtual = 59645
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'xdma_app_i/blk_mem_xdma_inst' at clock pin 's_aclk' is different from the actual clock period '16.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'xdma_app_i/xdma_user_int_inst/blk_mem_axiLM_inst' at clock pin 's_aclk' is different from the actual clock period '16.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42168 ; free virtual = 59722
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42168 ; free virtual = 59722
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for xdma_0_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_app_i/xdma_user_int_inst/blk_mem_axiLM_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_app_i/blk_mem_xdma_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42170 ; free virtual = 59724
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "wack_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'int_gen_fsm_loop[0].state_reg[0]' in module 'xdma_user_int_gen'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 's_axil_bresp_reg[0:0]' into 's_axil_bvalid_reg' [/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/imports/xdma_user_int_gen.v:172]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                     REQ |                               01 |                               01
+                     ACK |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'int_gen_fsm_loop[0].state_reg[0]' using encoding 'sequential' in module 'xdma_user_int_gen'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42161 ; free virtual = 59716
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 33    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module XDMA_UserRegSlave 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module xdma_user_int_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/wack_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[0]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[5]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[1]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[2]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[2]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[3]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[3]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[4]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[4]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[6]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[6]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[7]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[7]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[8]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[8]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[9]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[9]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[10]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[10]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[11]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[11]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[12]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[12]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[13]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[13]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[14]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[14]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[15]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[15]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[16]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[16]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[17]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[17]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[18]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[18]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[19]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[19]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[20]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[20]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[21]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[21]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[22]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[22]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[23]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[23]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[24]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[24]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[25]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[25]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[26]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[26]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[27]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[27]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[28]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[28]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[29]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[29]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[30]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[30]' (FDR) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/Mem_Size__reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42147 ; free virtual = 59704
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'xdma_0_i/axi_aclk' to pin 'xdma_0_i/bbstub_axi_aclk/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42031 ; free virtual = 59587
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42023 ; free virtual = 59580
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[1]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[2]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[2]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[3]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[3]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[4]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[4]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[5]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[5]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[6]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[6]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[7]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[7]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[8]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[8]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[9]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[9]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[10]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[10]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[11]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[11]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[12]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[12]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[13]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[13]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[14]'
+INFO: [Synth 8-3886] merging instance 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[14]' (FDSE) to 'xdma_app_i/xdma_user_int_inst/XDMA_UserRegSlave_i/IntStatus__reg[15]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42022 ; free virtual = 59579
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42022 ; free virtual = 59579
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42022 ; free virtual = 59579
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42022 ; free virtual = 59579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42022 ; free virtual = 59579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42022 ; free virtual = 59579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42022 ; free virtual = 59579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xdma_0        |         1|
+|2     |blk_mem_gen_1 |         1|
+|3     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |xdma_0        |     1|
+|4     |CARRY4        |     7|
+|5     |IBUFDS_GTE2   |     1|
+|6     |LUT1          |     3|
+|7     |LUT2          |     9|
+|8     |LUT3          |    49|
+|9     |LUT4          |    15|
+|10    |LUT5          |    35|
+|11    |LUT6          |    24|
+|12    |FDRE          |   144|
+|13    |FDSE          |     3|
+|14    |IBUF          |     5|
+|15    |OBUF          |     6|
++------+--------------+------+
+
+Report Instance Areas: 
++------+--------------------------+------------------+------+
+|      |Instance                  |Module            |Cells |
++------+--------------------------+------------------+------+
+|1     |top                       |                  |   838|
+|2     |  xdma_app_i              |xdma_app          |   416|
+|3     |    xdma_user_int_inst    |xdma_user_int_gen |   297|
+|4     |      XDMA_UserRegSlave_i |XDMA_UserRegSlave |   221|
++------+--------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42022 ; free virtual = 59579
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1888.250 ; gain = 121.750 ; free physical = 42078 ; free virtual = 59635
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1888.250 ; gain = 524.969 ; free physical = 42078 ; free virtual = 59635
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.250 ; gain = 0.000 ; free physical = 42018 ; free virtual = 59575
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1888.250 ; gain = 532.973 ; free physical = 42068 ; free virtual = 59625
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.250 ; gain = 0.000 ; free physical = 42068 ; free virtual = 59625
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/guocheng/soft/eda/xilinx/vivado/kc705/pcie_intrp_ex/xdma_0_ex/xdma_0_ex.runs/synth_1/xilinx_dma_pcie_ep.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xilinx_dma_pcie_ep_utilization_synth.rpt -pb xilinx_dma_pcie_ep_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 23 12:22:04 2022...
