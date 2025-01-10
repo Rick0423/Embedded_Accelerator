@@ -1,0 +1,1 @@
+cmd_/home/hyj/XDMA/xdma/xdma.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/hyj/XDMA/xdma/xdma.ko /home/hyj/XDMA/xdma/xdma.o /home/hyj/XDMA/xdma/xdma.mod.o;  true

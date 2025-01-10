@@ -1,0 +1,1 @@
+cmd_/home/hyj/XDMA/xdma/xdma.mod := { echo  /home/hyj/XDMA/xdma/libxdma.o /home/hyj/XDMA/xdma/xdma_cdev.o /home/hyj/XDMA/xdma/cdev_ctrl.o /home/hyj/XDMA/xdma/cdev_events.o /home/hyj/XDMA/xdma/cdev_sgdma.o /home/hyj/XDMA/xdma/cdev_xvc.o /home/hyj/XDMA/xdma/cdev_bypass.o /home/hyj/XDMA/xdma/xdma_mod.o /home/hyj/XDMA/xdma/xdma_thread.o;  echo; } > /home/hyj/XDMA/xdma/xdma.mod
